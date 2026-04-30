@@ -44,7 +44,7 @@ aruco_detector/
 /camera/color/image_raw
 ```
 
-카메라에서 입력되는 원본 이미지 토픽을 구독한다.
+카메라에서 입력되는 원본 이미지 토픽을 구독함.
 
 ### Published Topics
 
@@ -90,13 +90,13 @@ ros2 launch aruco_detector aruco_detector.launch.py
 
 ## 7. Check Topics
 
-마커 위치 기반 판단 결과를 확인한다.
+마커 위치 기반 판단 결과 확인
 
 ```bash
 ros2 topic echo /aruco/decision
 ```
 
-TurtleBot3 주행 명령 토픽을 확인한다.
+TurtleBot3 주행 명령 토픽 확인
 
 ```bash
 ros2 topic echo /cmd_vel
