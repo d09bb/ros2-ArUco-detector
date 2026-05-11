@@ -9,7 +9,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
-find_package(OpenCV REQUIRED COMPONENTS core imgproc highgui objdetect)
+find_package(OpenCV REQUIRED COMPONENTS core imgproc highgui aruco)
 find_package(std_msgs REQUIRED)
 
 add_executable(aruco_node aruco_detector/aruco_node.cpp)
@@ -48,6 +48,12 @@ install(FILES package.xml
 
 install(PROGRAMS
   scripts/marker_position_controller.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+install(PROGRAMS
+  scripts/marker_position_controller.py
+  scripts/marker_id_controller.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

@@ -1,10 +1,24 @@
+# ROS / colcon build artifacts
 build/
 install/
 log/
+
+# Python
 __pycache__/
 *.pyc
-*.bag
-*.db3
-*.sqlite3
+
+# C/C++ build files
+*.o
+*.out
+*.so
+
+# Editor
 .vscode/
+.idea/
+
+# OS
 .DS_Store
+
+# Temporary files
+*.swp
+*.tmp
