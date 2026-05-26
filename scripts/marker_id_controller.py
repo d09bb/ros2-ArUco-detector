@@ -26,8 +26,8 @@ class MarkerIDController(Node):
         self.deadband_px = 70
         self.stop_area_ratio = 0.10
 
-        self.linear_speed = 0.03
-        self.turn_speed = 0.15
+        self.linear_speed = 0.06
+        self.turn_speed = 0.25
 
         self.bridge = CvBridge()
 
